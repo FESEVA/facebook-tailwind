@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook TailWind</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e636f3aaa5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png" />
+
+<style>
+    #think2 div{
+    font-size: 0.25rem;
+}
+
+#THINKCARD{
+width: 610px;
+}
+
+.lobby2{
+    font-size: 0.25rem;
+}
+.lobby2 p{
+    font-size: medium;
+}
+
+#LOBBYCARD{
+width: 610px;
+}
+
+@media (min-width: 1650px) {
+
+#NAVICONS{
+
+    width: 1000px;
+margin: 0 auto;
+
+}
+
+}
+
+@media (min-width: 1300px) {
+
+#THINKCARD{
+
+width: 610px;
+}
+
+#LOBBYCARD{
+width: 610px;
+}
+
+
+}
+
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+
+    .card{
+        width: 100px;
+    }
+
+    #card1 img{
+        width: 90%;
+        margin-left: -13px;
+    }
+
+    #card5{
+        display: none;
+    }
+
+#THINKCARD{
+width: 438px;
+}
+
+ #think2{
+    font-size: x-small;
+}
+
+#LOBBYCARD{
+width: 438px;
+}
+
+.lobby2{
+    font-size: 0.3rem;
+}
+
+#LOBBYCARD button div p{
+    font-size: 0.8rem;
+}
+
+#photo{
+    width: 100%;
+}
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+
+.card{
+    width: 100px;
+}
+
+#card1 img{
+    width: 90%;
+    margin-left: -13px;
+}
+
+#card5{
+    display: none;
+}
+
+#card4{
+    display: none;
+}
+
+#THINKCARD{
+width: 316px;
+}
+
+ #think2{
+    font-size: 0.5rem;
+}
+
+#think2 div{
+    font-size: 0.1rem;
+}
+
+#LOBBYCARD{
+width: 316px;
+}
+
+.lobby2{
+    font-size: 0.2rem;
+}
+
+#LOBBYCARD button div p{
+    font-size: 0.6rem;
+}
+
+#thinkbutton{
+    font-size: small;
+}
+
+#photo{
+    width: 100%;
+}
+
+
+}
+
+@media (max-width: 890px) {
+
+    #card5{
+        display: none;
+    }
+
+    #THINKCARD{
+width: 486px;
+}
+
+ #think2{
+    font-size: x-small;
+}
+
+#LOBBYCARD{
+width: 486px;
+}
+
+.lobby2{
+    font-size: 0.3rem;
+}
+}
+
+</style>
+</head>
+
+<body>
+    <div id="NAVBAR" class="fixed top-0 z-50 flex w-full bg-white shadow">
+<!-- LOGO&LEFTSEARCH -->
+        <div id="LOGO&LEFTSEARCH" class="relative flex">
+            <div class="w-10 my-2 ml-4 text-transparent bg-gradient-to-b from-blue-300 to-blue-600 bg-clip-text" style="font-size: 0.5rem;"><i class="fab fa-facebook fa-5x"></i></div>
+            <div class="flex items-center justify-center w-10 my-2 ml-2 bg-gray-200 rounded-full lg:justify-start lg:w-60">
+                 <img src="/imagenes/fi-rr-search.svg" alt="lupa" class="w-4 lg:ml-3 ">
+                <input type="text" class="hidden ml-2 placeholder-gray-500 bg-gray-200 outline-none lg:block" placeholder="Busca en Facebook">
+            </div>
+        </div>
+
+     <div class="flex items-center justify-center py-1 m-1 ml-3 text-gray-600 rounded-lg w-14 hover:bg-gray-200 md:hidden" style="font-size: 0.5rem;"><i class="fas fa-bars fa-3x"></i></div>
+        
+        <!-- NAV ICONS CENTER   -->
+            <div id="NAVICONS" class="items-center justify-around hidden w-full h-full pt-1 md:flex ">
+                <div class="hidden w-1/3 h-full lg:block"></div>
+                <button class="relative w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500 m">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-white transition duration-150 rounded-lg focus:outline-none hover:text-gray-200 hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><i class=" fas fa-home fa-3x"></i></div>
+                </button>
+
+                <button class="relative w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-white transition duration-150 rounded-lg focus:outline-none hover:text-gray-200 hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><i class=" fab fa-youtube fa-3x"></i></div>
+                </button>
+
+                <button class="relative w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-white transition duration-150 rounded-lg focus:outline-none hover:text-gray-200 hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><i class=" fas fa-store fa-3x"></i></div>
+                </button>
+
+                <button class="relative w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-white transition duration-150 rounded-lg focus:outline-none hover:text-gray-200 hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><i class=" fas fa-users fa-3x"></i></div>
+                </button>
+
+                <button class="relative hidden w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500 lg:block">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-white transition duration-150 rounded-lg focus:outline-none hover:text-gray-200 hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><i class=" fas fa-th-large fa-3x"></i></div>
+                </button>
+
+                <button class="relative hidden w-1/5 transition duration-300 border-b-4 border-transparent focus:outline-none focus:border-blue-500 md:block lg:hidden">
+                    <div class="flex items-center justify-center h-full py-3 text-transparent text-gray-600 transition duration-150 rounded-lg focus:outline-none hover:bg-gray-200 focus:text-blue-500" style="font-size: 0.5rem;"><i class="fas fa-bars fa-3x"></i></div>
+                </button>
+                <div class="hidden w-1/3 h-full lg:block"></div>
+            </div>
+        
+        
+ <!-- RIGHT PERSONAL -->
+        <div id="RIGHTPERSONAL" class="absolute right-0 h-full pt-3 md:relative w-58 lg:w-80">
+
+            <div class="flex items-center justify-end">
+               <div class="flex">
+                   <div class="hidden -mt-1 cursor-pointer lg:flex ">
+                       <div class="items-center justify-center hidden px-2 mr-4 transition duration-150 rounded-full lg:flex hover:bg-gray-100">
+                        <div class="flex items-center justify-center mr-1 bg-center bg-cover rounded-full w-7 h-7" style="background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E);"></div> 
+                        <p class="font-semibold">Fernando</p>
+                        </div>
+                   </div>
+                
+            
+                <button class="flex items-center justify-center w-10 h-10 mr-2 -mt-1 transition duration-150 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none" style="font-size: 0.5rem;"><i class="fas fa-plus fa-2x"></i></button>
+                <button class="flex items-center justify-center w-10 h-10 mr-2 -mt-1 transition duration-150 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none" style="font-size: 0.5rem;"><i class="fab fa-facebook-messenger fa-2x"></i></button>
+                <button class="flex items-center justify-center w-10 h-10 mr-2 -mt-1 transition duration-150 transform bg-gray-200 rounded-full -rotate-12 focus:outline-none hover:bg-gray-300" style="font-size: 0.5rem;"><i class="fas fa-bell fa-2x"></i></button>
+                <button class="flex items-center justify-center w-10 h-10 mr-2 -mt-1 transition duration-150 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none" style="font-size: 0.5rem;"><div class="-mt-2"><i class="fas fa-sort-down fa-3x"></i></div></i></div> 
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+    <div id="CONTENT" class="relative w-full bg-gray-100 " style="margin-top: 57px;">
+
+        <div class="flex">
+             <!-- SIDEBARLEFT -->
+            <div id="SIDEBARLEFT" class="fixed left-0 hidden px-2 py-4 overflow-x-auto overflow-y-auto bg-gray-100 w-80 lg:flex" style="height : calc(100vh - 57px);" >
+                <div class="block ">
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer focus:outline-none focus:bg-gray-300 h-14 hover:bg-gray-200">
+                        <div class="flex items-center justify-center mr-1 bg-center bg-cover rounded-full w-9 h-9" style="background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E);"></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Fernando Sevilla</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="text-transparent w-9 h-9 bg-gradient-to-b from-pink-600 to-purple-700 bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-shield-virus fa-9x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">COVID-19: Centro de información</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-r from-blue-600 to-green-300 bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-user-friends fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Amigos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-blue-500 w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-users fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Grupos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-b from-blue-400 via-blue-900 to-blue-500 bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-store fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Marketplace</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-br from-green-400 to-blue-700 bg-clip-text" style="font-size: 0.25rem;"><i class="fa fa-youtube fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Watch</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-b from-red-500 via-black to-black bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-calendar-times fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Eventos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-gray-800 w-9 h-9 " style="font-size: 0.25rem;"><i class="fas fa-history fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Recuerdos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-b from-pink-600 to-purple-700 bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-bookmark fa-7x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Guardado</p>
+                    </button>
+
+                     <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center transition duration-150 bg-gray-300 rounded-full w-9 h-9 " style="font-size: 0.5rem;"><div class=""><i class="fas fa-angle-down fa-3x"></i></div></i></div> 
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Ver más</p>
+                     </button>
+                     
+                     <div class="ml-2 border-b border-gray-300"></div>
+                    <div class="flex items-center justify-start hover:button:flex">
+                        <h3 class="px-2 py-3 text-lg font-semibold text-gray-500">Tus accesos directos</h3>
+                        <button class="hidden px-2 ml-12 text-blue-500 rounded h-9 hover:bg-gray-300">Editar</button>
+                    </div>
+                    
+
+                     <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center w-10 h-10 mr-1 bg-center bg-cover rounded-lg" style="background-image: url(https://concepto.de/wp-content/uploads/2020/03/musica-e1584123209397.jpg);"></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Top music tracks 2020 </p>
+                    </button>
+
+                    <div class="h-11"></div>
+                    <div class="flex" style="height : calc(100vh - 786px);">
+                        <div class="self-end w-full mb-0 ml-2 text-xs text-gray-600">
+                        <a href="#" class="underline">Privacidad</a> ·
+                        <a href="#" class="underline">Condiciones</a> ·
+                        <a href="#" class="underline">Publicidad</a> ·
+                        <a href="#" class="underline">Opciones de anuncios</a>·
+                        <a href="#" class="underline">Cookies</a> ·
+                        <a href="#" class="underline">Más</a> ·
+                        <a href="#" class="underline">Facebook © 2021</a> 
+                    </div>
+                    </div>
+                    
+                        
+                  </div>
+                
+            </div>
+                <!-- CONTENT CENTER -->
+                <div id="REALCONTENT" class="relative w-full min-h-screen space-y-6 bg-gray-100 md:px-5 md:mr-60 md:py-5 lg:px-0 lg:ml-80 lg:mr-80">
+
+
+                    <!-- HISTORY BOARD -->
+                    <div class="relative ">
+                    <div class="flex justify-center space-x-3 "> <!-- STACK OF CARDS -->
+                            
+                        <button id="card1" class="relative transition duration-300 bg-white shadow-md card rounded-xl w-28 h-52 focus:outline-none hover:opacity-80" > <!-- SINGLE CARD -->
+                            <div  class="relative overflow-hidden rounded-t-xl "> 
+                                <div class="flex self-center object-cover w-32 h-32 transition duration-500 transform rounded-xl hover:scale-105"><img class="w-32 h-full -ml-2 " src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E" alt=""></div>
+                            </div>
+                            
+                            <div class="relative h-20"><p class="mt-5 font-semibold ">Crear una historia</p></div>
+                        </button>
+
+                        <button id="card2" class="relative overflow-hidden shadow-md card w-28 h-52 focus:outline-none hover:opacity-80 rounded-xl" > <!-- SINGLE CARD -->
+                            <img class="object-cover w-full h-full transition duration-300 transform rounded-xl hover:scale-105" src="https://depor.com/resizer/ANbOnHZZuiudwp1WSkU94aRgwJ4=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/GJLZY4NAYVDD7HG5Q4FL7HP57Q.png" alt="">
+                            <div class="absolute font-semibold text-center text-white bottom-2 left-2">Pizzerias</div>
+                        </button>
+
+                        <button id="card3" class="relative overflow-hidden shadow-md card w-28 h-52 focus:outline-none hover:opacity-80 rounded-xl" > <!-- SINGLE CARD -->
+                            <img class="object-cover w-full h-full transition duration-300 transform rounded-xl hover:scale-105" src="https://www.autotallersanchezromero.com/wp-content/uploads/mecanica-del-automoviel-en-alhaurin-de-la-torre.jpg" alt="">
+                            <div class="absolute font-semibold text-center text-white bottom-2 left-2">Talleres de Mecánica</div>
+                        </button>
+
+                        <button id="card4" class="relative overflow-hidden shadow-md card w-28 h-52 focus:outline-none hover:opacity-80 rounded-xl" > <!-- SINGLE CARD -->
+                            <img class="object-cover w-full h-full transition duration-300 transform rounded-xl hover:scale-105" src="https://europeanbusinessmagazine.com/wp-content/uploads/2020/09/Gaming_Asia.jpg" alt="">
+                            <div class="absolute font-semibold text-center text-white bottom-2 left-2">Gaming</div>
+                        </button>
+
+                        <button id="card5" class="relative overflow-hidden shadow-md card w-28 h-52 focus:outline-none hover:opacity-80 rounded-xl" > <!-- SINGLE CARD -->
+                            <img class="object-cover w-full h-full transition duration-300 transform rounded-xl hover:scale-105" src="https://miro.medium.com/max/2750/1*4iYJRfUNEKObjwKvVjFHLw.jpeg" alt="">
+                            <div class="absolute font-semibold text-center text-white bottom-2 left-2">People Awesome</div>
+                        </button>
+                    </div>        
+                    </div>
+
+
+                 <!-- WHAT ARE YOU THINKING CARD -->
+                 <div class="flex justify-center " >
+                    <div id="THINKCARD" class="relative block w-full bg-white rounded-lg">
+                        <div class="flex px-4 py-3 justify-items-start">
+                            <div class="flex items-center justify-center w-10 h-10 mr-1 bg-center bg-cover rounded-full shadow-md" style="background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E);"></div>
+                            <button id="thinkbutton" class="flex items-center flex-1 pl-3 text-lg text-gray-500 transition duration-100 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none">¿Qué estás pensando, Fernando?</button>
+                        </div>
+                        <hr class="mx-4 border-gray-300">
+                        <div id="think2" class="flex justify-around py-3">
+                            <button class="flex items-center px-4 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none"><div class="flex items-center justify-center mr-2 text-red-600" ><i class="fas fa-video fa-6x"></i></div>Vídeo en directo</button>
+                            <button class="flex items-center px-4 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none"><div class="flex items-center justify-center mr-2 text-green-600" ><i class="fas fa-photo-video fa-6x"></i></div>Foto/vídeo</button>
+                            <button class="flex items-center px-4 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none"><div class="flex items-center justify-center mr-2 text-yellow-400" ><i class="far fa-laugh-beam fa-6x"></i></div>Sentimiento/actividad</button>
+                        </div>
+                    </div>
+                 </div>
+
+
+                 <!-- Create Lobby -->
+                 <div class="flex justify-center">
+                     <div id="LOBBYCARD" class="flex items-center justify-start px-4 py-3 space-x-2 bg-white border rounded-lg">
+                         <button class="flex items-center p-1 transition duration-150 border-2 border-gray-200 rounded-full hover:bg-gray-100 focus:outline-none ">
+                             <div class="flex items-center mr-2 text-transparent lobby2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text"><i class="fas fa-sign-in-alt fa-6x"></i> </div>
+                            <div class="flex items-center"><p class="mr-3 text-blue-600">Crear Sala</p></div>
+                         </button>
+                    
+                    <button class="items-center justify-center w-10 h-10 mr-1 bg-center bg-cover rounded-full shadow-md ml-3flex lobby2 focus:outline-none" style="background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E);"></button>
+                 </div>
+                 </div>
+                 
+                   <!-- PHOTO CARDS  -->
+                    
+                   <div class="flex justify-center">
+                        <div id="THINKCARD" class="relative block w-full bg-white rounded-lg">
+                            <div class="flex px-4 py-3">
+                                <button class="flex items-center justify-center w-10 h-10 bg-center bg-cover border-2 border-blue-500 rounded-full shadow-md m1 l focus:outline-none" style="background-image: url(https://okdiario.com/img/2021/03/15/imagine-dragons.jpg);"></button>
+                                <div class="block pr-10">
+                                    <p class="ml-3 text-sm font-semibold text-gray-900">Imagine Dragons</p>
+                                    <p class="ml-3 text-xs text-gray-400">19 de marzo a las 15:42</p>
+                                </div>
+                                <button class="flex items-center justify-center w-10 p-2 rounded-full ml-80 hover:bg-gray-100 focus:outline-none"><div class="flex items-center justify-center text-gray-600" style="font-size: 0.25rem;"><i class="fas fa-ellipsis-h fa-4x"></i></div></button>
+                                
+                            </div>
+                            <div id="photo" class="relative w-full overflow-hidden shadow-md card h-96 focus:outline-none " > <!-- SINGLE CARD -->
+                                <img class="object-cover w-full h-full transition duration-300 " src="https://ejerciciosencasa.as.com/wp-content/uploads/2015/10/1421949527_041529_1421949942_noticia_normal.jpg" alt="postPhoto">
+                            </div>
+
+                            <div class="block bg-white">
+                                <div class="block py-2 mx-2 bg-white border border-gray-400 rounded-b-lg ">
+                                        <a href="#" class="ml-3 -mb-2 text-base font-semibold text-gray-900 hover:underline">Last Concert</a>
+                                        <br>
+                                        <a href="#" class="ml-3 text-xs text-gray-400 hover:underline">19 de marzo a las 15:42</a> 
+                                        <p class="ml-3">🎈🎇🎆</p>                            
+                                </div>
+                                <div class="flex justify-start ">
+                                    <button class="flex items-center py-1 ml-3 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg focus:outline-none"><div class="flex items-center justify-center mr-2 text-red-500" ><i class="fab fa-gratipay fa-1x"></i></div>9835</button>
+                                </div>
+                            </div>
+                            <hr class="mx-2 border-gray-300">
+                            <div id="think2" class="flex justify-around p-1">
+                                <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-red-600"><div class="flex items-center justify-center mr-2 " ><i" class="far fa-thumbs-up fa-6x"></i></div>Me gusta</button>
+                            <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-black"><div class="flex items-center justify-center mr-2 "><i class="far fa-comment-alt fa-6x"></i></div>Comentar</button>
+                            <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-blue-600"><div class="flex items-center justify-center mr-2" ><i class="fas fa-share fa-6x"></i></div>Compartir</button>
+                            </div>  
+
+
+                        </div>
+                   </div>
+
+
+                   <div class="flex justify-center">
+                    <div id="THINKCARD" class="relative block w-full bg-white rounded-lg">
+                        <div class="flex px-4 py-3">
+                            <button class="flex items-center justify-center w-10 h-10 bg-center bg-cover border-2 border-blue-500 rounded-full shadow-md m1 l focus:outline-none" style="background-image: url(https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc);"></button>
+                            <div class="block pr-10">
+                                <p class="ml-3 text-sm font-semibold text-gray-900">Youtube</p>
+                                <p class="ml-3 text-xs text-gray-400">19 de marzo a las 16:42</p>
+                            </div>
+                            <button class="flex items-center justify-center w-10 p-2 rounded-full ml-80 hover:bg-gray-100 focus:outline-none"><div class="flex items-center justify-center text-gray-600" style="font-size: 0.25rem;"><i class="fas fa-ellipsis-h fa-4x"></i></div></button>
+                            
+                        </div>
+                        <div id="photo" class="relative w-full overflow-hidden shadow-md card h-96 focus:outline-none " > <!-- SINGLE CARD -->
+                            
+                            <iframe class="object-cover w-full h-full transition duration-300 "
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+
+                        <div class="block bg-white">
+                            <div class="block py-2 mx-2 bg-white border border-gray-400 rounded-b-lg ">
+                                    <a href="#" class="ml-3 -mb-2 text-base font-semibold text-gray-900 hover:underline">Crazy Muppets</a>
+                                    <br>
+                                    <a href="#" class="ml-3 text-xs text-gray-400 hover:underline">19 de marzo a las 15:42</a> 
+                                    <p class="ml-3">🐷🐸🦊</p>                            
+                            </div>
+                            <div class="flex justify-start ">
+                                <button class="flex items-center py-1 ml-3 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg focus:outline-none"><div class="flex items-center justify-center mr-2" ><i class="fa">🤣</i></div>340</button>
+                            </div>
+                        </div>
+                        <hr class="mx-2 border-gray-300">
+                        <div id="think2" class="flex justify-around p-1">
+                            <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-red-600"><div class="flex items-center justify-center mr-2 " ><i" class="far fa-thumbs-up fa-6x"></i></div>Me gusta</button>
+                            <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-black"><div class="flex items-center justify-center mr-2 "><i class="far fa-comment-alt fa-6x"></i></div>Comentar</button>
+                            <button class="flex items-center px-6 py-2 font-semibold text-gray-600 transition duration-150 bg-white rounded-lg hover:bg-gray-200 focus:outline-none hover:text-blue-600"><div class="flex items-center justify-center mr-2" ><i class="fas fa-share fa-6x"></i></div>Compartir</button>
+                        </div>  
+
+
+                    </div>
+               </div>
+
+
+
+
+
+                </div>
+     
+            
+           
+            <!-- SIDEBAR RIGHT-->
+            <div id="SIDEBARRIGHT" class="fixed right-0 hidden py-5 pl-8 pr-0 overflow-y-auto bg-gray-100 md:block w-60 lg:w-80" style="height : calc(100vh - 57px);">
+                <div class="flex items-center justify-start hover:button:flex">
+                    <h3 class="px-2 py-3 text-lg font-semibold text-gray-500">Publicidad</h3>
+                </div> 
+                <a href="https://feseva.github.io/cybeerWebPage/" target="blank">
+                    <div class="flex items-center w-full h-40 px-2 transition duration-300 ease-out rounded-lg cursor-pointer hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 focus:outline-none">
+                        <div class="flex items-center justify-center w-20 h-20 mr-1 bg-white bg-center bg-cover rounded-lg lg:w-36 lg:h-36" style="background-image: url(https://feseva.github.io/cybeerWebPage/imagen/logo.png);"></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Cybeer </p>
+                    </button> 
+                    </div>
+                </a>
+                <div class="py-1 border-b border-gray-300 "></div>
+                <div class="flex items-center justify-start hover:button:flex">
+                    <h3 class="px-2 py-3 text-lg font-semibold text-gray-500">Cumpleaños</h3>
+                </div>
+                <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                    <div class="flex items-center justify-center text-transparent w-9 h-9 bg-gradient-to-b from-red-600 via-blue-500 to-blue-500 bg-clip-text" style="font-size: 0.25rem;"><i class="fas fa-gift fa-7x"></i></div>
+                    <p class="ml-3 text-sm text-gray-900">Hoy es el cumpleaños de <b>alguien</b> </p>
+                </button>
+                <div class="py-1 -mb-2 border-b border-gray-300 "></div>
+
+                <div class="flex py-2">
+                   <div class="flex items-center justify-start w-24">
+                        <h3 class="px-2 py-3 text-lg font-semibold text-gray-500">Contactos</h3>
+                    </div>
+
+                    <div class="flex-1 mt-1 w-32justify-items-end">
+
+                        <div class="block">
+                            <div class="flex items-center justify-end">
+                                <button class="flex items-center justify-center w-8 p-2 transition duration-300 rounded-full hover:bg-gray-300 focus:outline-none">
+                                    <img src="/imagenes/fi-rr-search.svg" alt="lupa" class="w-4">
+                            </button>
+                            <button class="flex items-center justify-center w-8 p-2 my-2 ml-2 transition duration-300 rounded-full hover:bg-gray-300 focus:outline-none"><div class="flex items-center justify-center text-gray-600" style="font-size: 0.25rem;"><i class="fas fa-video fa-4x"></i></div></button>
+                            <button class="flex items-center justify-center w-8 p-2 my-2 ml-2 transition duration-300 rounded-full hover:bg-gray-300 focus:outline-none"><div class="flex items-center justify-center text-gray-600" style="font-size: 0.25rem;"><i class="fas fa-ellipsis-h fa-4x"></i></div></button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="block">
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer focus:outline-none focus:bg-gray-300 h-14 hover:bg-gray-200">
+                        <div class="flex items-center justify-center mr-1 bg-center bg-cover rounded-full w-9 h-9" style="background-image: url(https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p200x200/14184314_1599589947001216_5763364733359136557_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=FCq4UMBD6goAX8Ltyov&_nc_ht=scontent-mad1-1.xx&tp=6&oh=ec4f7874b4d4f26e185d769a9eebbe2b&oe=6078E93E);"></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Fernando Sevilla</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                    <button class="flex items-center w-full px-2 transition duration-300 ease-out rounded-lg cursor-pointer h-14 hover:bg-gray-200 focus:outline-none focus:bg-gray-300">
+                        <div class="flex items-center justify-center p-2 bg-gray-300 rounded-full w-9 h-9" style="font-size: 0.25rem;"><i class="fas fa-user fa-6x"></i></div>
+                        <p class="ml-3 text-sm font-semibold text-gray-900">Nombre Apellidos</p>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+       
+
+
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>
